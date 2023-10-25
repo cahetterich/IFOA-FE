@@ -14,6 +14,11 @@ main{
     width: 20%;
 }    
 
+#imagine img {
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px gray;
+}   
+
 #claim {
     color: #40726E;
     text-align: center;
@@ -50,7 +55,7 @@ h4 {
     border-left: 1px solid #FFDA2F;
 }
 
-h3 {
+h5 {
     color: red;
 }
 
