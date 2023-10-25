@@ -1,0 +1,63 @@
+header {
+    text-align: center;
+    /*border-bottom: 2px solid #FFDA2F;
+    aspect-ratio: auto 250 / 35;*/
+    }
+
+main{
+    width: 50vw;
+    margin: 0 auto;
+    font-family: georgia;
+}
+
+#logo img {
+    width: 20%;
+}    
+
+#claim {
+    color: #40726E;
+    text-align: center;
+    border-top: 2px solid #FFDA2F;
+    background-color: #fdfdf1;
+    margin-top: 20px;
+    }
+
+#claim span {
+    color: #40726E;
+    font-weight: bold;
+    }
+
+#h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+#aling {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+    color: gray;
+}
+
+#featured {
+    border-left: 1px solid #FFDA2F;
+}
+
+h3 {
+    color: red;
+}
+
+a {
+    color: #40726E;
+}
+
+h2 {
+    border-bottom: 1px solid #40726E;
+}
