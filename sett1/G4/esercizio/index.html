@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Il blog dei developers" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!--  //// LINK's Icon's  ////  -->
@@ -20,10 +23,10 @@
       </div>
       <nav> 
         <h2>EPICODE - IL BLOG DEI DEVELOPERS</h2> 
-         <ul id="listaMenu">
-          <li>HOME</li> <!-- // icon // -->
-          <li>ARTICOLI</li> <!-- // icon // -->
-          <li>JOB</li> <!-- // icon // -->
+         <ul id="listaMenu">          
+          <li> <div class="icon"></div><ion-icon name="star-sharp"></ion-icon> HOME</li> <!-- // icon // -->
+          <li> <ion-icon name="star-sharp"></ion-icon> ARTICOLI</li> <!-- // icon // -->
+          <li> <ion-icon name="star-sharp"></ion-icon> JOB</li> <!-- // icon // -->
          </ul>
       </nav>
     </div>
@@ -32,24 +35,21 @@
   <main>  
     <article>  <!--  //// ARTICLE   ////  -->
       <h1>Come creare un template per i post</h1>
-      <p>(*) di Mario Rossi - <span> (*) publlicato il 25-10-2020 </span></p>  <!-- // icon // -->
+      <div id="autore">
+      <p><ion-icon name="create-sharp"></ion-icon> di Mario Rossi - <span><ion-icon name="time-sharp"></ion-icon> publlicato il 25-10-2020 </span></p>  <!-- // icon // -->
+    </div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac erat ac erat tempor egestas.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur  <span class="viola">adipiscing elit integer</span> ac erat ac erat tempor egestas.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing:</p>
 
       <ul> <!-- // Stile = HEADER / MAIN / FOOTER // -->
-        <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li> 
-        <li>
-          Contenuti centrali variabili del tag
-          <code>&lt;main&gt;</code> (corpo principale)
-        </li>
-        <li>
-          Contenuti di fine pagina comuni, da inserire nel tag
-          <code>&lt;footer&gt;</code>
-        </li>
+        <li>Contenuti di intestazione del tag <span class="bagge"><code>&lt;header&gt;</code></span></li> 
+        <li>Contenuti centrali variabili del tag <span class="bagge"><code>&lt;main&gt;</code></span>(corpo principale)</li>
+        <li>Contenuti di fine pagina comuni, da inserire nel tag <span class="bagge"><code>&lt;footer&gt;</code></span></li>
       </ul>
+
       <p>Lorem ipsum dolor sit amet <br> Consectetur adipiscing elit. 
-        Integer ac erat ac erat tempor egestas. <!--/VIOLA/--> dolor sit amet <!--/VIOLA/-->, consectetur adipiscing:</p> 
+        Integer ac erat ac erat tempor egestas. <span class="viola"> Adipiscing elit integer</span>, consectetur adipiscing:</p> 
         <ol>
           <li>
             Progettare su carta il markup finale, assegnando ad ogni specifico
@@ -61,7 +61,7 @@
           </li>
           <li>Applicare gli stili CSS</li>
         </ol>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac erat ac erat tempor egestas.</p>
+      <p>L'orem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac erat ac erat tempor egestas.</p>
 
       <table> <!--  ////  border soto   ////  -->
         <caption> <!--  ////  font   ////  -->
@@ -109,10 +109,11 @@
 
     </article>
   
-
-
+    <!--  ////  video   ////  -->
+    <!--  ////  Novita   ////  -->
+    <!--  //// articuli correlati  ////  -->
 </main>
-
+  <!--  ////  footer   ////  -->
 
   </body>
 

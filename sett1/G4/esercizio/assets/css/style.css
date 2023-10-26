@@ -9,8 +9,8 @@
 /* HEADER */
 
 header {    
-    background-color: #018FB1;
-    /*background-image: linear-gradient(#00A0C6 #036D86);*/
+    background: rgb(1,143,177);
+    background: linear-gradient(350deg, rgba(1,143,177,1) 0%, rgba(15,107,129,1) 100%);   
     margin: 1rem;
     box-shadow: 4px 4px 8px, -4px -4px 8px #666;
     padding-top: 30px ;
@@ -23,15 +23,15 @@ header {
     font-weight: bold;
     }
 
- ul{
+ #listaMenu {
     list-style-type: none;
     margin-block-start: 0px;
     padding-inline-start: 0px;
     }
 
- #listaMenu li::before{
-    content: '⭐ ';
- }   
+ /*#listaMenu li::before{
+    content: '⭐';
+ }   */
 
 /* MAIN */
 
@@ -46,6 +46,20 @@ main {
 
 /* ELEMENTI NEL MAIN - ARTICLE */ 
 
+#autore {
+    color:#AFAFAF;
+    font-weight: normal;
+}
+
+.viola {
+    color:#A32C75;
+}
+
+.bagge {
+    background-color:#E3E3E3;
+    border: 1px solid #969494 ;
+    border-radius: 5px;    
+}
 
 /* TABELLE */
 
