@@ -18,13 +18,14 @@ header {
     }
 
 /* MAIN */
-#inizio {                 /* CONSERTAR IMAGEM INTEIRA */  
-    background-image: url(/sett1/G5/Esercizio/assets/images/banner.jpg);   
-    background-size: 580px 500px;  
+#inizio {                  
+    background-image: url(/sett1/G5/Esercizio/assets/images/banner.jpg);  
+    background-size: cover; 
+    width: 100%;   
     padding-top: 30px ;
     padding-bottom: 50px ;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
    }
 
 h1{
@@ -39,11 +40,11 @@ p{
    line-height: 1.65;   
 }
 
-#invia {                      /* RIMUOVERE LA RIGA SOTTO - BIANCO */ 
+#invia {                      
     background-color: #f04c2f ; 
     font-family: "Montserrat";
     font-size: 1.3rem;
-    padding: 20px 35px;
+    padding: 20px 45px;
     border-radius: 5px;  
     border: 0;    
     }
@@ -94,7 +95,7 @@ h3{
     color:white;
     }
     
-/* BLOCO III - IMAGINE */
+/* BLOCO III - IMMAGINE */
 
 #bloco3 {                       /* REGOLARE IL BORDO */ 
     padding-top: 40px ;
