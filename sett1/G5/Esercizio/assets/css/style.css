@@ -21,7 +21,7 @@ header {
 #inizio {                  
     background-image: url(/sett1/G5/Esercizio/assets/images/banner.jpg);  
     background-size: cover; 
-    width: 100%;   
+    background-position: center center; 
     padding-top: 30px ;
     padding-bottom: 50px ;
     padding-left: 70px;
