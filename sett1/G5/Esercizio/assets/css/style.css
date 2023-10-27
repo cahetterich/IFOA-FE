@@ -1,0 +1,33 @@
+/* IMPOSTAZIONI GENERALI MOBILE */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;1,300&family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    margin: 0px;
+    font-family: "Open Sans";
+    text-align: center; 
+    /**/ 
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    text-align: center;    
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+}
+/* MAIN */
+
+h1{
+    color:#25a2c3;
+    /*font-weight: bold; - negrito*/   
+    /* aumentar font*/ 
+}
+
+/* Button */
+
+
+/* BLOCO */
+
+/* ELEMENTI */
+
+/* FOOTER */
