@@ -33,7 +33,7 @@ document.getElementById("esercizio2").innerHTML = '<em> 2 - Crea una variable ch
 let myName = 'Carla';
 console.log(myName);
 
-document.getElementById("myName").innerHTML = myName;
+document.getElementById("myName").innerHTML += myName;
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.*/
