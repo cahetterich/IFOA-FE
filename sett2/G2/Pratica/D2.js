@@ -177,23 +177,46 @@ if (valoreFornito2 % 2 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let val = 15
+
+document.getElementById('val').innerHTML = val;
+
+if (val < 10) {
+    console.log("Meno di 10");
+    document.getElementById('meno10').innerHTML = 'Il numero minore di 10.';
+  } else if (val < 5) {
+    console.log("Meno di 5");
+    document.getElementById('meno5').innerHTML = 'Il numero minore di 5.'
+  } else {
+    console.log("Uguale a 10 o maggiore");
+    document.getElementById("ugualeMaggiore").innerHTML = 'Il numero è uguale a 10 o maggiore.'
+  }
+
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
-const me = {  //array se lê de forma normal - banalmente isso
+const me = {  
   name: 'John',
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+me.city = 'Toronto';
+console.log(me);
+document.getElementById('toronto').innerHTML = 'Aggiunto  Toronto';
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+delete me.lastName;
+console.log(me);
+document.getElementById('delete').innerHTML = ' Last Name Delete'
 
 /* ******** ESERCIZIO 13 - ******** NON FARE ********
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
