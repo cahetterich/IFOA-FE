@@ -12,7 +12,7 @@
         <form> <!-- Javascript -->
             <fieldset> <!-- lineta -->
                 <label for="nome"> Inserisci il tuo nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" />
                 <br>
                 <label for ="anno"> Inserisci l'anno di nascita</label>
                 <input type="number" name="anno" id="anno" />
@@ -20,10 +20,18 @@
         </form>
         <br> <!-- BUTTON FAKE - deve essere posto al di fuori del FORM - Javascript -->
         <button type="button" id="verifica" onclick="eventHandler()"> VERIFICA </button>
-        <h3 id="errore"></h3>
+        <h3 id="errore">&nbsp;</h3>
     </div>
 
+    <div id="stampa">
+        <h3 id="mioNome">&nbsp;</h3> <!-- "&nbsp;"  posiziona la riga nel browser, senza alterare la presentazione del sito. - coloca a linha no Browser, não alterando a apresentação do site -->
+        <h3 id="miaVerifica">&nbsp;</h3>        
+    </div>
 
+    <div id="descrizione">
+        <p><b>*</b> Questa applicazione legge nome e anno di nascita, verifica la maggiore 
+            o minore età e stampa il tutto a video</p> <!-- questo è problematico perché sposta le linee e smantella il nostro sito - apresenta problema fazer isso, pois move as linhas e isso desmonta nosso site -->
+    </div>
 
     <script src="assets/js/app.js"></script>
 </body>

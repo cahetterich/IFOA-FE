@@ -105,6 +105,8 @@ const starWarsCharacters = [
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
 
+let characters = [];
+
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "characters" creato precedentemente.
@@ -114,6 +116,8 @@ const starWarsCharacters = [
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
+
+let femaleCharacters;
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.

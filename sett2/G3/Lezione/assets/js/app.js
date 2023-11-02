@@ -30,8 +30,8 @@ let errore = document.getElementById('errore')
 
 function eventHandler() {  // che definisce quali funzioni devono seguire - função que define quais funções devem seguir 
     leggiForm();
-    if (anno >=1900 && anno <= 2023 && nome != '') { //erro 
-        errore.innerHTML = ''; // errore H3
+    if (anno >= 1900 && anno <= 2023 && nome != '') { //erro 
+        errore.innerHTML = '&nbsp;'; // errore H3 /  &nbsp; - posiziona la riga nel browser
     calcolaEta();
     verifica();
     scrivi();
@@ -58,3 +58,12 @@ function verifica() {
    // console.log(stato); //  mettiamo "console.log" per poter analizzare nella console se è corretto
 }
 
+function scrivi() {
+    document.getElementById('mioNome').innerHTML = 'Ciao ' + nome;
+    document.getElementById('miaVerifica').innerHTML = 'La tua età è ' + eta + '; sei ' + stato;
+}
+
+function cancellaForm() {   // apaga os dados 
+    document.getElementById('nome').value ='';
+    document.getElementById('anno').value ='';
+}
