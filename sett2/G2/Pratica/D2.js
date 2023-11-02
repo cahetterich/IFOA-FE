@@ -181,15 +181,15 @@ let val = 15
 
 document.getElementById('val').innerHTML = val;
 
-if (val < 10) {
+if (val < 5) {
+  console.log("Meno di 5");
+  document.getElementById('meno5').innerHTML = 'Il numero minore di 5.';
+   } else if (val < 10) {
     console.log("Meno di 10");
     document.getElementById('meno10').innerHTML = 'Il numero minore di 10.';
-  } else if (val < 5) {
-    console.log("Meno di 5");
-    document.getElementById('meno5').innerHTML = 'Il numero minore di 5.'
   } else {
     console.log("Uguale a 10 o maggiore");
-    document.getElementById("ugualeMaggiore").innerHTML = 'Il numero è uguale a 10 o maggiore.'
+    document.getElementById("ugualeMaggiore").innerHTML = 'Il numero è uguale a 10 o maggiore.';
   }
 
 
