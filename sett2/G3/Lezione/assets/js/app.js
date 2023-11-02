@@ -45,16 +45,16 @@ function eventHandler() {  // che definisce quali funzioni devono seguire - fun�
 function leggiForm() {
     nome = document.getElementById('nome').value;
     anno = document.getElementById('anno').value;
-    console.log(nome, anno);  //  mettiamo "console.log" per poter analizzare nella console se è corretto
+   // console.log(nome, anno);  //  mettiamo "console.log" per poter analizzare nella console se è corretto
 }
 
 function calcolaEta(){
     eta = 2023 - Number(anno);
-    console.log(eta);  //  mettiamo "console.log" per poter analizzare nella console se è corretto
+    // console.log(eta);  //  mettiamo "console.log" per poter analizzare nella console se è corretto
 }
 
 function verifica() {
     stato = (eta >= 18) ? 'maggiorenne' : 'minorenne';
-    console.log(stato); //  mettiamo "console.log" per poter analizzare nella console se è corretto
+   // console.log(stato); //  mettiamo "console.log" per poter analizzare nella console se è corretto
 }
 
