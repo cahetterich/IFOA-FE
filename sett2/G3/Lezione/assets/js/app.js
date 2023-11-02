@@ -49,7 +49,7 @@ function leggiForm() {
 }
 
 function calcolaEta(){
-    eta = 2023 - Number(anno);
+    eta = 2023 - Number(anno);  // string
     // console.log(eta);  //  mettiamo "console.log" per poter analizzare nella console se è corretto
 }
 
