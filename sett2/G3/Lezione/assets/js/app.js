@@ -28,6 +28,9 @@ let eta;
 let stato;  // globale in quanto utilizzata in quanto per verificare l'età e stampare a video
 let errore = document.getElementById('errore')
 
+// ORDINE DELLE FUNZIONI: SEGUIAMO LO STESSO ORDINE PER SCRIVERE E ORGANIZZARE IL NOSTRO CODICE - OGNI FUNZIONE FA UNA COSA 
+// ORDEM DAS FUNÇÕES: SEGUIMOS A MESMA PARA ESCREVER E ORGANIZAR O NOSSO CÓDIGO - CADA FUNÇÃO FAZ UMA COISA 
+
 function eventHandler() {  // che definisce quali funzioni devono seguire - função que define quais funções devem seguir 
     leggiForm();
     if (anno >= 1900 && anno <= 2023 && nome != '') { //erro 
@@ -41,8 +44,7 @@ function eventHandler() {  // che definisce quali funzioni devono seguire - fun�
     return;
     }
 }
-
-function leggiForm() {
+    function leggiForm() {
     nome = document.getElementById('nome').value;
     anno = document.getElementById('anno').value;
    // console.log(nome, anno);  //  mettiamo "console.log" per poter analizzare nella console se è corretto
