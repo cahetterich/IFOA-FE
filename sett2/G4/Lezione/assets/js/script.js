@@ -27,8 +27,8 @@ function controlla() {
     }
 }
 
-function calcola() { // variavel global 
-    let nomeOperazione;   // vira variabile local aqui dentro da função
+function calcola() {
+    let nomeOperazione;
     let risultato;
 	switch (operazione) {
 		case '1':
@@ -48,10 +48,10 @@ function calcola() { // variavel global
 			risultato = Number(numero1) / Number(numero2);
 			break;
 	}
-    scrivi(nomeOperazione, risultato); // scrivi é chamado no final da função para que apareça quando chamado no "document.getElementById.."
+    scrivi(nomeOperazione, risultato);
 }
 
-function scrivi(nomeOperazione, risultato) { // scrivi receber dois parametros 
+function scrivi(nomeOperazione, risultato) {
     document.getElementById('risultato').innerHTML = 'Il risultato della ' + nomeOperazione +  ' tra ' + numero1 + ' e ' + numero2 + ' è ' + risultato;
 }
 
