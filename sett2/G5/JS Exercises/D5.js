@@ -12,20 +12,39 @@ REGOLE
 */
 const pets = ['dog', 'cat', 'hamster', 'redfish']
 
+console.log('Esercizio 1');
+console.log(pets);
+
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
+
+pets.sort();
+
+console.log('Esercizio 2');
+console.log(pets);
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
+pets.reverse();
+
+console.log('Esercizio 3');
+console.log(pets);
+
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
 
+pets.push(pets.splice(0,1)[0]);
+
+console.log('Esercizio 4');
+console.log(pets);
+
 /* ESERCIZIO 5
-    Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
+    Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" 
+    con valore a tua scelta.
 */
 const cars = [
   {
@@ -48,10 +67,37 @@ const cars = [
   },
 ]
 
+
+console.log('Esercizio 5');
+
+let licensePlate = {
+  License:'HS45JKS',
+};
+
+function addToCars(item){
+  cars.push(item);
+  console.log(cars.length);
+}
+addToCars(licensePlate);
+
+console.log(cars);
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+
+let rimuovi = 'trims';
+
+let indice = cars.indexOf(rimuovi);
+
+while(rimuovi >= 0){
+  cars.splice(indice, 1);
+  indice = cars.indexOf(rimuovi);
+}
+
+console.log('Esercizio 6');
+console.log(cars);
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
