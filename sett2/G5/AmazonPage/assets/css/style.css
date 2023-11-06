@@ -85,8 +85,9 @@ main {
  }    
 
  #find img {
-    width: 100%;	
+    width: 90%;	
     height: auto;     
+    padding: px;  
     margin-top: 0px;
     border-radius: 20px;
     align-content: center;
