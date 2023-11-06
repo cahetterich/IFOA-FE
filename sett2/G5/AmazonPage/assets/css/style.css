@@ -1,0 +1,124 @@
+/* Your styles here */
+
+/* DIMENSIONI UTILIZZATE = 1024×768 */
+
+
+/* BODY */   
+
+body {
+    background-color: #E9EDEE;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+  
+/* HEADER */
+
+header {
+    background-color: #222F3F;        
+}
+
+#logo {
+    padding-top: 15px;
+    padding-left: 50px;   
+}
+
+nav{
+    background-color: #364759;
+ }
+
+li { 
+     color: white;
+     display:inline-block;
+     font-size: 12px;
+     padding: 5px;  
+}
+
+/* MAIN */
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+#shop {
+    background-color: #F56600;
+    color: white;
+    font-size: 12px;   
+    text-align: center;    
+    line-height: 2;   
+}
+
+#holiday { 
+    background-image: url(/AmazonPage/assets/images/bg-image.png);
+    background-size: cover; 
+    background-position: center center; 
+    color: white;
+    text-align: center;
+    font-size: 10px; 
+    padding: 20px;
+ }
+ 
+ #find {
+    background-color:#FFFFFF;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+     }
+
+.genitor {
+    display: flex;
+    text-align: center;
+    }
+
+ h2 {
+    font-size: 15px; 
+    font-family: Helvetica, sans-serif;
+ }
+
+ a { 
+    color: #1A5665;
+    font-weight: bold;
+ }    
+
+ #find img {
+    width: 100%;	
+    height: auto;     
+    margin-top: 0px;
+    border-radius: 20px;
+    align-content: center;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);      
+ }
+
+ #play {
+    text-align: center;
+    font-size: 15px; 
+    font-weight: bold;
+ }
+
+ #play img {
+    width: 100%;	
+    height: auto; 
+ }
+
+ /* FOOTER */
+
+ footer {
+    background-color:#222F3F;
+    text-align: center;
+    padding-bottom: 25px;
+ }
+
+ #invia {
+    background-color: #364759;    
+    font-size: 15px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+ #footer {
+    color: white;    
+ }
