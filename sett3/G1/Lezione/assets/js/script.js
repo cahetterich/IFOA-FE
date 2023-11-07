@@ -4,8 +4,9 @@ const mioArray = ['Anna', 'Mario', 'Daniele', 'Giovanna', 'Nicola'];
 const nome1 = mioArray.splice(1, 2); // Con splice elimino i valori presenti nell'array mioArray e li inserisco in un nuovo array chiamato nom1
 
 const nuovoArray = [...mioArray, ...nome1] // Con lo spread operator inserisco tutti i valori di entrambi gli array in nuovoArray
+//Anna, Giovanna, Nicola
 
-console.log(nuovoArray);
+console.log(nuovoArray); // Anna, Giovanna, Nicola, Mario, Daniele
 
 mioArray.splice(0, 2, 'Gianni', 'Antonio'); // Il metodo splice MODIFICA l'array iniziale, che resta modificato in TUTTO lo script, non solo dopo lo splice
 
@@ -17,7 +18,7 @@ const arrayPosizioni = ['primo', 'secondo', 'terzo'];
 console.log(arrayPosizioni);
 
 for (let i = 0; i < arrayPosizioni.length; i++) {
-  document.getElementById('testo').innerHTML += `<li>${arrayPosizioni[i]}</li>`
+  document.getElementById('testo').innerHTML += `<li>${arrayPosizioni[i]}</li>` // imprime multiplas vezes os elementos de um array 
 }
 
 for (let i = 0; i < arrayPosizioni.length; i++) {
