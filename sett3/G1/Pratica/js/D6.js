@@ -6,8 +6,7 @@
 const myConcat = function (str1, str2) {    // slice()
 
  }
-
-
+22
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
