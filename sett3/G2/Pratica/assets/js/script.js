@@ -18,10 +18,11 @@
  
        //const addClassToTitle = function () {}     - ID cambiare
      
-       const addClassToTitle = document.getElementById('cambiare'); 
+       const addClassToTitle = document.getElementById('titolo'); 
        addClassToTitle.classList.toggle('myHeading');
 
        console.log('- Esercizio 2 -');
+       console.log(addClassToTitle);
        /* ESERCIZIO 3
         Scrivi una funzione che cambi il testo dei p figli di un div
        */
