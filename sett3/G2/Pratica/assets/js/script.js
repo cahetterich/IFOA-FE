@@ -1,8 +1,7 @@
      /* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
-
-       //const changeTitle = function () {}
+      //const changeTitle = function () {}
 
        newPageTitle = 'Pratica Sett 3 G2'; // title
        document.title = newPageTitle;
@@ -12,31 +11,44 @@
 
        console.log('- Esercizio 1 -');
        console.log(newPageTitle);
+
        /* ESERCIZIO 2
         Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
      */
- 
-       //const addClassToTitle = function () {}     - ID cambiare
+      //const addClassToTitle = function () {}    
      
        const addClassToTitle = document.getElementById('titolo'); 
        addClassToTitle.classList.toggle('myHeading');
 
        console.log('- Esercizio 2 -');
        console.log(addClassToTitle);
+
        /* ESERCIZIO 3
-        Scrivi una funzione che cambi il testo dei p figli di un div
-       */
- 
-       const changePcontent = function () {}
- 
+        Scrivi una funzione che cambi il testo dei p figli di un div   */ 
+       //  const changePcontent = function () {}    
+      
+         const changePcontent = function () {
+         document.querySelector("div p").innerText = "Questo è il testo modificato di un placeholder per gli esercizi";
+        };
+
+        changePcontent();
+
+       /*const changePcontent = document.querySelectorAll('.idPadre .pFigli'); 
+        changePcontent.forEach(element => {
+        document.querySelector('pFigli').textContent = newTestoP;
+       
+        });*/       
 
        console.log('- Esercizio 3 -');
+      
        /* ESERCIZIO 4
         Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
        */
  
        const changeUrls = function () {}
  
+       console.log('- Esercizio 3 -');
+
        /* ESERCIZIO 5
         Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
      */
