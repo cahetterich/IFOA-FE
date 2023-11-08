@@ -41,20 +41,30 @@
 
        console.log('- Esercizio 3 -');
       
-       /* ESERCIZIO 4
+       /* ESERCIZIO 4  
         Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
        */
  
-       const changeUrls = function () {}
- 
-       console.log('- Esercizio 3 -');
+       const changeUrls = document.querySelector ("#link4");
+       changeUrls.href = "https://www.google.com";
 
-       /* ESERCIZIO 5
+ 
+       console.log('- Esercizio 4 -');
+       console.log(changeUrls);
+
+       /* ESERCIZIO 5    <ul id="secondList"> <li> 3 i
         Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
      */
  
-       const addToTheSecond = function () {}
- 
+       /*const addToTheSecond = document.querySelector(#secondList, li) {  // ERROOOO
+        let listaEl =  addToTheSecond.push ("Nuova linea");
+
+    }
+
+    
+       console.log('- Esercizio 5 -');
+       console.log(listaEl);*/
+
        /* ESERCIZIO 6
         Scrivi una funzione che aggiunga un paragrafo al primo div
      */
