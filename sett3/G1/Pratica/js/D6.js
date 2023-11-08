@@ -4,9 +4,12 @@
 */
 
 const myConcat = function (str1, str2) {    // slice()
+  return str1.slice(0,2).concat(str2.slice(str2.length -3));
+ };
 
- }
-22
+ console.log('- Esercizio 1 -');
+ console.log(myConcat('Bene', 'Male').toUpperCase());
+
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
@@ -17,6 +20,9 @@ const myConcat = function (str1, str2) {    // slice()
 // generi un numero casuale
 // e lo pushi
 // torni l'array
+
+
+console.log('- Esercizio 2 -')
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
