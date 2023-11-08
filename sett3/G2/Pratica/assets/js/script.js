@@ -10,18 +10,26 @@
        testoH1 = 'Pratica Sett 3 G2';  // h1
        document.querySelector('h1').textContent = testoH1;
 
+       console.log('- Esercizio 1 -');
+       console.log(newPageTitle);
        /* ESERCIZIO 2
         Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
      */
  
-       const addClassToTitle = function () {}
- 
+       //const addClassToTitle = function () {}     - ID cambiare
+     
+       const addClassToTitle = document.getElementById('cambiare'); 
+       addClassToTitle.classList.toggle('myHeading');
+
+       console.log('- Esercizio 2 -');
        /* ESERCIZIO 3
         Scrivi una funzione che cambi il testo dei p figli di un div
        */
  
        const changePcontent = function () {}
  
+
+       console.log('- Esercizio 3 -');
        /* ESERCIZIO 4
         Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
        */
