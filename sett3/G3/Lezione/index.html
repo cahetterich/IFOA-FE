@@ -7,18 +7,18 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
-		<form action="form.php">
-			<fieldset>
+		<form action="form.php">   <!-- ACTION -->  
+			<fieldset>  <!-- FIELDSET É OPCIONAL, MAS DEIXA BORDA --> 
 				<label for="nome">Nome</label>
 				<input type="text" id="nome" />
 				<label for="cognome">Cognome</label>
-				<input type="text" id="cognome" required />
+				<input type="text" id="cognome" required />  <!-- REQUIRED = IMPORTANTE! DEVE SER PREENCHIDO -->
 				<label for="email">Email</label>
 				<input type="text" id="email" required />
 				<label for="eta">Età</label>
 				<input type="number" id="eta" min="18" max="90" />
-				<button type="submit" id="invia">INVIA</button>
-                <button type="reset">CANCELLA</button>
+				<button type="submit" id="invia">INVIA</button> <!-- INVIA FORM -->
+                <button type="reset">CANCELLA</button> <!-- CANCELLA FORM -->
 			</fieldset>
 		</form>
 
@@ -31,17 +31,19 @@
 
         <hr>
 
-        <h1>setTimeout</h1>
+        <h1>setTimeout</h1>   
 
-        <h3 id="codice"></h3>
-        <h3 id="rigenera"></h3>
-        <button type="button" id="ricrea" onclick="generaCodice()">Rigenera codice</button>
+		<h3>Questo codice sarà valido per 10 secondi, dopo andrà rigenerato</h3>
+
+		<h3 id="codice"></h3>   <!-- GERAÇÃO DE CÓDIGO -->
+        <h3 id="rigenera"></h3> <!-- RIGENERA CÓDIGO -->
+        <button type="button" id="ricrea" onclick="generaCodice()">Rigenera codice</button> <!-- BOTÃO DE REGENERAÇÃO  -->
 
         <hr>
 
         <h1>setInterval</h1>
-
-        <button type="button" onclick="avviaTimer()">AVVIA TIMER</button>
+ 
+        <button type="button" onclick="avviaTimer()">AVVIA TIMER</button>    <!-- CRIADO BOTÃO  -->
 
         <div id="barra">
             <h3 id="percentuale"></h3>
