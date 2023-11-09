@@ -58,9 +58,7 @@
  
        /*const addToTheSecond = document.querySelector(#secondList, li) {  // ERROOOO
         let listaEl =  addToTheSecond.push ("Nuova linea");
-
     }
-
     
        console.log('- Esercizio 5 -');
        console.log(listaEl);*/
