@@ -15,3 +15,5 @@ Requisiti:
 * Cerca di rendere l'applicazione accattivante nello stile e piacevole da utilizzare per l'utente!
 
 */
+
+// Dimensione Browser: 1024x768

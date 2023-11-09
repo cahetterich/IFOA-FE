@@ -1,19 +1,43 @@
+/**/
+/*Dimensione Browser: 1024x768*/
+
 body {
-    background-image: url(/Pratica/assets/img/painting-mountain-lake-with-mountain-background.jpg);
+    background-image: url(/Pratica/assets/img/pexels-vijay-saiwal-4810501.jpg);
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     }
 
-h3 {
+h4 {
     text-align: center;
-    color:aliceblue ;
-    font-size: 0.8rem;
+    color:rgb(201, 195, 195);
+    font-size: 1.5rem;
     padding: 7px;
 }
 
 #pratica {
     background-color: black;
     margin-left: 25px;
-    margin-right: 62em;
+    margin-right: 45em;
     border-radius: 20px;
-  }
+    box-shadow: 4px 4px 8px 0px rgba(2, 2, 2, 0.411);   
+}
+
+#bloco1, #bloco2 {
+    background-color:aliceblue;
+    box-shadow: 4px 4px 8px 0px rgba(2, 2, 2, 0.411);
+    border-radius: 20px;
+    margin-left: 13em;
+    margin-right: 13em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+    text-decoration: bold;
+}
+
+h2 {
+    padding-left: 2em;
+    
+}
