@@ -41,7 +41,8 @@ const monthNames = [   //array que criamos nós para identificar os meses em ita
     'Dicembre', 
 ];
 
-const scriviMese = function() {
+// QUANTOS MESES TEMOS ? 
+const scriviMese = function() {   // QUANTOS MESES TEMOS ? 
     const title = document.querySelector('h1'); // Seleciono que o nosso monthNames aparecerá no local de 'h1'
     const indiceMese = now.getMonth(); // getMonth dá o número do mês que estamos, que hoje é 10 perché siamo a novembre, e puxamos o 10 do nosso "monthNames"
     const nomeMese = monthNames[indiceMese]; // cicla = monthNames[novembre] até encontrar a décima posição da nossa array (nosso mês)
@@ -49,12 +50,13 @@ const scriviMese = function() {
     title.innerText = nomeMese; 
 };
 
-scriviMese();
+scriviMese(); // chamamos a função 
 
 // Sappiamo in che mese siamo, ma quanti giorni ha questo mese? 
 // Dal momento che febbraio negli anni bisestili ha 29 giorno, per sapere il mio mese quanti giorni ha
 // mi serve anche l'anno
 
+// QUANTOS DIAS TEMOS NO TOTAL ? 
 const giorniTotali = function() {
     const anno = now.getFullYear(); // 2023 perché siamo nel 2023
     const mese = now.getMonth(); // 10 perché siamo a novembre 
@@ -68,7 +70,7 @@ const giorniTotali = function() {
     //console.log('numero di giorni', ultimoGiorno); // mostra: data - ano no console
     const numeroGiorni = ultimoGiorno.getDate();
     //console.log(numeroGiorni);
-    return numeroGiorni; // numeroGiorni è il numero di volte per cui dovrò ripetere la creazione dei div corrispondenti ai singoli giorni
+    return numeroGiorni; // numeroGiorni è il numero di volte per cui dovrò ripetere la creazione dei div corrispondenti aos dias do mês correspondente
 };
 
 giorniTotali();
@@ -103,6 +105,7 @@ const creaGriglia = function(numeroGiorni) { //numeroGiorni e il numero di giorn
         const cellaGiorno = document.createElement('div'); // ad ogni giorno associo un div
         cellaGiorno.classList.add('day'); // stilizzo il div come definito in css
 
+        // EVENTO CLICK SUL SINGOLO GIORNO
         cellaGiorno.addEventListener('click', function(e) {  // rendo cliccabili i div dei giorni
             deselezionaCelle(); // deseleziono l'eventuale altra cella selezionata
             cellaGiorno.classList.add('selected');  // aggiungo la classe css day selected per mostrare la selezione del giorno cliccato
@@ -115,6 +118,8 @@ const creaGriglia = function(numeroGiorni) { //numeroGiorni e il numero di giorn
                       divAppuntamenti.style.display = 'none';
          }
         });
+
+        // Criação da "GRIGLIA E ARRAY "
         // devo scrivere il numero del giorno nei div
         const valoreCella = document.createElement('h3');
         valoreCella.innerText = i + 1;
@@ -130,11 +135,13 @@ const creaGriglia = function(numeroGiorni) { //numeroGiorni e il numero di giorn
 
 creaGriglia(giorniTotali());  // argumento da função = giorniTotali, que traz o valor verdadeiro
 
+
+// LISTA DE TAREFAS - APPUNTAMENTI  mostra o que encontra no dia selecionado 
 const mostraAppuntamenti = function(indiceGiorno) {  // puxamos de 'mostraAppuntamenti(i);'
     // Con questa funzione si popopla la lista degli appuntamenti con gli appuntamenti del giorno
 
     // 01 - prendere gli appuntamenti giusti 
-    const appuntamentiGiorno = appointments[indiceGiorno]; // dentro do array ele vai buscar os appointments que tem ali
+    const appuntamentiGiorno = appointments[indiceGiorno]; // [] dentro do array ele vai buscar os appointments que tem ali
     // 02 - selezionare la lista contenitore
     const lista = document.querySelector('#appointments ul');
     //03 - svuotare la lista
@@ -149,7 +156,7 @@ const mostraAppuntamenti = function(indiceGiorno) {  // puxamos de 'mostraAppunt
 
     // 05 - la lista è piena ma è ancora nascosta
         const divAppuntamenti = document.getElementById('appointments');
-        divAppuntamenti.style.display = 'block';  // esconde a lista 
+        divAppuntamenti.style.display = 'block';  // contenitore da lista - esconde a lista para que não acumule informações na nossa aba de navegação
 };
 
 // dobbiamo creare nuovi appuntamenti!   ***  // FORM //  *** 
@@ -170,6 +177,8 @@ const mostraAppuntamenti = function(indiceGiorno) {  // puxamos de 'mostraAppunt
     appointments[indiceArray].push(stringaAppuntamento);
     //console.log('array dopo il salve', appointments);
 }*/
+
+//
 
 const meetingForm = document.querySelector('form');
 //meetingForm.addEventListener('submit', submitForm);
