@@ -9,10 +9,54 @@
 
 <body>
 
+    <div class="container">  <!-- colocamos class em main para poder alterar seus comportamentos pré-definidos -->
+
+        <main> <!-- MAIN -->
+            <!--calendario, form per nuovi appuntamenti-->           
+            <h1></h1> 
+            <div id="calendar">
+                <!-- le celle dei giorni saranno generate da JS e posizionate qua dentro-->
+            </div>
+
+            <h2> Aggiungi appuntamento</h2>
+            <div id="addMeeting">  <!-- DIV è un contenitore in bloco / bloco --> 
+                <div>  
+                    <h4>Giorno</h4> 
+                    <span id="newMeetingDay">Clicca su un giorno</span>   <!-- SPAN è un contenitore in line / de linha = usamos para estilizar uma linha que será válida apenas para ela -->
+                </div>
+
+                <form> <!-- FORM - dividimos em 4 blocos para poder deixar responsivo--> 
+                    <div> <!-- colocando um div em cada bloco, cria um espaço entre as estruturas--> 
+                        <div>
+                        <h4>Ora appuntamento</h4>
+                        <input type="time" required id="newMeetingTime">
+                    </div>
+
+                    <div>
+                        <h4>Nome appuntamento</h4>
+                        <input type="text" required id="newMeetingName" placeholder="Nome appuntamento">
+                    </div>
+                
+                    <div>
+                        <h4>Aggiungi</h4>
+                        <button type="submit">Salva</button>  <!-- com SUBMIT JS sabe que está trabalhando com um FORM, com type BUTTON não acontece isso, pois somos nós que devemos incluir sua funcionalidade -->
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <section> <!-- SEZIONE DOVE MOSTRO GLI APPUNTAMENTI ESISTENTI PER IL GIORNO SELEZIONATO -->
+            <div id="appointments"> 
+                <h2>Appuntamenti del giorno:</h2>
+                <ul>
+                    <!--la lista appuntamenti sarà generata e costruita da JS-->
+                </ul>
+            </div>
+        </section>
+
+    </div> <!-- FINALE DIV "CONTAINER" -->
 
 
-
-    
 
     
 <script src="/Lezione Mattina/assets/js/script.js"></script>    
