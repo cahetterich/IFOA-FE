@@ -86,11 +86,10 @@ h1 {
 }
 
 .button {
-    float: right;
-    font-size: 0.6rem;
+    margin-top: 2px;
+    float: right;    
     border-radius: 5px;
-    padding: 5px 5px;
-    margin-top: 4px;
+    font-size: 0.8rem; 
 }
 
  li{
