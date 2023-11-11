@@ -37,6 +37,7 @@ button i {
 
 input {
     padding: 0.35rem 0.5rem;
+    margin-bottom: 20px;
 }    
 
 h4 {
@@ -100,5 +101,6 @@ h1 {
 
 .barrato {
     color: rgb(117, 120, 138);
+    background-color: rgb(230, 226, 221);
     text-decoration: line-through;
 }
