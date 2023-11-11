@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratica Sett 3 G3</title>
-    <link rel="stylesheet" href="/Pratica/assets/css/style.css">
+    <title>Pratica Sett 3 G3 - Todo List</title>
+    <link rel="stylesheet" href="/G3/Pratica/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
    
 <body>   <!-- Dimensione Browser: 1024x768 -->
@@ -13,16 +14,28 @@
     <h4>Pratica Sett 3 - G3</h4>
     </div>
 
-
     <div id="bloco1"> 
     <h1>Todo List</h1>
     </div>
 
-    <div id="bloco2">
-     <h2>Aggiungi la tua attività:</h2> 
-      
+    <div id="bloco2"> 
+
+        <div class="form">
+            <h2>Aggiungi la tua attività:</h2> 
+                <input type="text" id="task" placeholder="Che cosa farete?"> <!-- Lista -->
+                <button type="button" id="inserisci"> <i class="fa-thin fa-plus"></i> </button>
+        </div>
+
+    <hr/>
+        
+    <div id="lista">
+     <h2>Le tue task salvate:</h2> 
+        <div id="task"> 
+            <ul id="listaTask"></ul>
+        </div>
+     </div>
+
     </div>
-    
- <script src="/Pratica/assets/js/script.js"></script>   
-</body>
+         <script src="/G3/Pratica/assets/js/script.js"></script>   
+    </body>
 </html>

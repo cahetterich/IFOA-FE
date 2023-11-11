@@ -2,10 +2,42 @@
 /*Dimensione Browser: 1024x768*/
 
 body {
-    background-image: url(/Pratica/assets/img/pexels-vijay-saiwal-4810501.jpg);
+    background-image: url(/G3/Pratica/assets/img/pexels-vijay-saiwal-4810501.jpg);
     background-size: cover;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     }
+
+button {  /* definições gerais dos botões*/
+    background-color: white;
+    color: rgb(66, 74, 117);
+    border: 2px solid rgb(66, 74, 117);
+    border-radius: 15px;
+    padding: .3rem .6rem; /* tamanho botão*/
+    font-size: 1rem;
+    cursor: pointer; /* mão no botão*/
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+ }
+
+button:hover {  /* cor do botão quando o usuário colocar o mouse em cima*/
+    background-color:rgba(27, 32, 56, 0.986) ;
+    color: white;
+}
+
+button:hover > i {  /* cor do icone quando o usuário colocar o mouse em cima*/
+    color: white;
+}
+
+button i {
+    color: rgb(117, 120, 138);
+    font-weight: bold;
+    pointer-events: none; /*desabilita o click no icone, deixando apenas a ação no botão*/
+}
+
+input {
+    padding: 0.35rem 0.5rem;
+}    
 
 h4 {
     text-align: center;
@@ -16,28 +48,55 @@ h4 {
 
 #pratica {
     background-color: black;
-    margin-left: 25px;
-    margin-right: 45em;
+    max-width: 250px;
+    padding-left: 25px;
+    margin: 1rem;
     border-radius: 20px;
     box-shadow: 4px 4px 8px 0px rgba(2, 2, 2, 0.411);   
 }
 
-#bloco1, #bloco2 {
+#bloco1{
     background-color:aliceblue;
     box-shadow: 4px 4px 8px 0px rgba(2, 2, 2, 0.411);
     border-radius: 20px;
-    margin-left: 13em;
-    margin-right: 13em;
+    max-width: 450px;
+    margin: 3rem auto;
+}
+
+ #bloco2  {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: aliceblue;
+    padding: 1.5rem;
+    padding-top: 0.1rem;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    box-shadow: 4px 4px 8px 0px rgba(2, 2, 2, 0.411);
 }
 
 h1 {
     text-align: center;
     font-size: 3rem;
     padding: 20px;
-    text-decoration: bold;
 }
 
-h2 {
-    padding-left: 2em;
-    
+#task {
+    width: 70%;
+}
+
+.button {
+    float: right;
+    font-size: 0.5rem;
+    border-radius: 50%;
+    padding: 5px 5px;
+    margin-top: 2px;
+}
+
+#listaTask {
+    width: 400px;     
+    font-size: 1.2rem;   
+ }
+
+.barrato {
+    text-decoration: line-through;
 }
