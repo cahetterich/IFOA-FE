@@ -21,39 +21,84 @@ const myConcat = function (str1, str2) {    // slice()
 // e lo pushi
 // torni l'array
 
+const random10 = () => {
+  const array = []
 
+  for (let index = 0; index < 10; index++) {
+    array.push(Math.floor(Math.random() * 101))   // PUSH = coloca no array os dados
+  }                                              //  Math.floor = arredonda o valor para o numero inteiro menor possível
+  return array                                  //   Math.random = gera vários numeros randomico (0,17) para virar inteiro devemos colcoar * 101
+}                                              
 console.log('- Esercizio 2 -')
+console.log(random10());
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
+const numeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const arrayFiltrato = numeri.filter(function(el) {
+      return el % 2 === 0
+})
+
+console.log('- Esercizio 3 -');
+console.log(arrayFiltrato);
+
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+const somma = [1, 2, 3, 4]
+let total = 0;
+
+somma.forEach(function(el) {  // ForEACH = individualiza cada item do array 
+  total += el;
+});
+
+console.log('- Esercizio 4 -');
+console.log(total);
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
+const totaleLista = somma.reduce(function(totale, el) {   // REDUCE = permite que você execute uma função de redução, como o nome sugere,
+                                                         //  em cada elemento de um determinado array, passando o valor retornado da operação
+  return totale + el;                                   //   anterior como um acumulador.
+}) ;                                               
+                                                        
+
+
+console.log('- Esercizio 5 -');
+console.log(totaleLista);
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
 const arr = [1, 2, 3]
-
 const n = 5
 
 // [6, 7, 8]
 
-const addN = function (arr, n) {
-  // tornare un nuovo array con ogni valore addizionato con n
-}
+// tornare un nuovo array con ogni valore addizionato con n
+const addN = arr.map((el) => el + n); 
+
+console.log('- Esercizio 6 -');
+console.log(addN);
+
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+
+
+console.log('- Esercizio 7 -');
+
+
+//console.log(lunghezze(['EPICODE', 'is', 'great']))
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
