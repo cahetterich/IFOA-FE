@@ -69,7 +69,6 @@ const totaleLista = somma.reduce(function(totale, el) {   // REDUCE = permite qu
 }) ;                                               
                                                         
 
-
 console.log('- Esercizio 5 -');
 console.log(totaleLista);
 

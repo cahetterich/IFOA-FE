@@ -13,7 +13,7 @@ REGOLE
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 
-const numeri = [10, 20]
+const numeri = [10, 20];
 let sum = 0;
 
 numeri.forEach(function(el) {   
@@ -22,41 +22,153 @@ numeri.forEach(function(el) {
 
 console.log('- Esercizio A -');
 console.log(sum);
+
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 
+const random = () => {
+  const array = []
+
+  for (let index = 0; index < 1; index++) {
+    array.push(Math.floor(Math.random() * 21))   
+  }                                              
+  return array                                  
+}                                              
+
 console.log('- Esercizio B -');
+console.log(random());
+
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
 
+const me = [
+  {
+    name: 'Carla',
+    surname: 'Hetterich',
+    age: 30,
+  }
+];
+
 console.log('- Esercizio C -');
+console.log(me);
+
+
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
+
+const newMe = me.map(el => {
+  const { age, ...newEl} = el;
+  return newEl;
+})
+
 console.log('- Esercizio D -');
+console.log(newMe);
+
+
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
+
+const addSkills = (el) => { 
+  return {
+    ...el,
+    skills: 'C'
+  };
+};
+
+const meSkills = newMe.map(addSkills); 
+
 console.log('- Esercizio E -');
+console.log(meSkills);
+ 
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
+
+/*
+const newSkills = meSkills.map(el => ({...el}));
+
+newSkills[0].skills += ', JavaScript'
+
+console.log(newSkills);
+*/
+
+const newSkills = meSkills.map(el => ({...el}));
+
+newSkills[0].skills = `${newSkills[0].skills}, JavaScript`;
+
+
 console.log('- Esercizio F -');
+console.log(newSkills);
+
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+
+const skillsRimu = meSkills.map(el => {
+
+  if (el.skills.includes('JavaScript')) {
+    const skillsArray = el.skills.split(',').filter(skill => skill !== 'JavaScript');
+    return {...el, skills: skillsArray.join(', ') };
+  }
+  return el;
+})
+
 console.log('- Esercizio G -');
+console.log(skillsRimu);
+
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
 
+/*
+ const dice = () => {
+ const array = []
+
+  for (let index = 0; index < 1; index++) {
+    array.push(Math.floor(Math.random() * 7))   
+  }                                              
+  return array                                  
+}                                              
+
+console.log(dice());
+*/
+
+function dice() {
+  
+  const randomNumber = Math.floor(Math.random() * 6) + 1;
+  return randomNumber;
+}
+
+const dado = dice();
+
+console.log('- Esercizio 1 -');
+console.log(dado);
+
+
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
+
+function whoIsBigger(n1, n2) { 
+  if (n1 > n2) {
+    return n1;
+  } else if (n2 > n1) {
+    return n2;
+ } else {
+  return "i numeri sono uguali";
+ }
+}
+
+const maggioreN = whoIsBigger(100,100)
+
+console.log('- Esercizio 2 -');
+console.log('Il maggiore dei due:', maggioreN);
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
@@ -64,10 +176,31 @@ console.log('- Esercizio G -');
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
 
+const splitMe = elStringa => elStringa.split(' ');
+
+const result = splitMe("I love coding");
+
+
+console.log('- Esercizio 3 -');
+console.log(result);
+
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
+
+function delete1(stringaD, booleanoD) { 
+  if (booleanoD) { 
+    return stringaD.slice(1); // true, rimuovere 1 lettera 
+  } else {
+    return stringaD.slice(0, -1); // false, rimuovere -1 (ultima) lettera 
+  }
+}
+
+const deleteResul = delete1 ("Javascript", true);
+
+console.log('- Esercizio 4 -');
+console.log(deleteResul);
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
