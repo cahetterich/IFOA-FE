@@ -220,13 +220,23 @@ console.log(result2);
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+const isThisAnEmail = email => /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/.test(email);  // [a-z]{2,} * richiede almeno due caratteri alfabetici
 
+const isEmail = isThisAnEmail("test@email.it");
 
 console.log('- Esercizio 6 -');
+console.log(isEmail); // true o false
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+function whatDayIsIt() {
+  return new Date().toLocaleDateString('it-IT', {weekday: 'long', timeZone: 'Europe/Rome'});
+}
+const day = whatDayIsIt();
+
+console.log('- Esercizio 7 -');
+console.log(day);
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
