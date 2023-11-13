@@ -251,6 +251,8 @@ console.log(day);
   }
 */
 
+console.log('- Esercizio 7 -');
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
