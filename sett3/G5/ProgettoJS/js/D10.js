@@ -206,11 +206,23 @@ console.log(deleteResul);
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
+
 */
+
+const onlyLetters = elStringa => elStringa.replace(/[0-9]/g, '');
+const result2 = onlyLetters(" I have 4 dogs and 2 cats");
+
+
+console.log('- Esercizio 5 -');
+console.log(result2);
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+
+
+
+console.log('- Esercizio 6 -');
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
