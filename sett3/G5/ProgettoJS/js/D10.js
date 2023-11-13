@@ -251,7 +251,18 @@ console.log(day);
   }
 */
 
-console.log('- Esercizio 7 -');
+const dices = () => Math.floor(Math.random() * 6) + 1;
+
+function rollTheDices(el) {
+
+}
+
+
+const result3 = rollTheDices();
+
+console.log('- Esercizio 8 -');
+console.log(result3); // ex { sum: 10, values: [3, 3, 4] }
+
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
