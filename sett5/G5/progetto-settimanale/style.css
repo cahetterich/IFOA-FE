@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Spectral:wght@400;500;600;700&display=swap');
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Spectral', serif; */
@@ -8,8 +8,10 @@ font-family: 'Spectral', serif; */
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
   }
 
+  
 
 /*                  header                        */
   .menu {
@@ -28,7 +30,7 @@ font-family: 'Spectral', serif; */
   }
   
   .medium-logo {
-    height: 25px;    
+    height: 25px;  
   }
   
   .menu-nav {
@@ -69,18 +71,28 @@ font-family: 'Spectral', serif; */
     align-items: center;
     height: 450px; 
     max-height: 80vh; 
-    position: relative; /* Adicionado para posicionar o elemento filho de forma absoluta em relação a este elemento pai */
+    position: relative; 
 }
 
 .principale {
     flex: 1; /* Ocupa o espaço restante no contêiner */
     padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
   
 h1 {
     font-family: 'Spectral', serif;
-    font-weight: 500;
-    font-size: 106px;
+    font-weight: 600;
+    font-size: 105px;
+    color: #191919;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
     color: #191919;
 }
 
@@ -88,3 +100,15 @@ h1 {
   .m-container {
     flex-shrink: 0; /* Impede que o contêiner do SVG encolha */
   }
+
+  #button-start {
+    background: #191919; 
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+  }
+
