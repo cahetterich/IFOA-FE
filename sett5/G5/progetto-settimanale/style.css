@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Spectral&display=swap');
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Spectral', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: #191919 solid 1px;
+    background: #ffc017;
+    z-index: 1;    
+  }
+  
+  .medium-logo {
+    height: 25px;    
+  }
+  
+  .menu-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  
+  .menu-item {
+    font-family: 'Roboto', sans-serif;
+    color: #191919;
+    font-weight: 400;
+    font-size: 14px
+  }
+
+  #button-get {
+    background: #191919; /*  green > #1a8917 */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+  }
