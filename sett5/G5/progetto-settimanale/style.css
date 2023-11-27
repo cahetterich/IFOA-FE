@@ -10,6 +10,8 @@ font-family: 'Spectral', serif; */
     text-decoration: none;
   }
 
+
+/*                  header                        */
   .menu {
     position: fixed;
     top: 0;
@@ -49,4 +51,40 @@ font-family: 'Spectral', serif; */
     border-radius: 50px;
     height: 40px;
     width: 100px;
+  }
+
+/* + color :houver */
+
+
+  /*                  main                        */
+  .contenuto {
+    padding-top: 80px;    
+  }
+
+  .contenitore-principale {
+    background: #ffc017;
+    border-bottom: #191919 solid 1px;
+    display: flex;  
+    /*flex-direction: row;*/
+    align-items: center;
+    height: 450px; 
+    max-height: 80vh; 
+    position: relative; /* Adicionado para posicionar o elemento filho de forma absoluta em relação a este elemento pai */
+}
+
+.principale {
+    flex: 1; /* Ocupa o espaço restante no contêiner */
+    padding-left: 100px;
+  }
+  
+h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 500;
+    font-size: 106px;
+    color: #191919;
+}
+
+  /* m-container */
+  .m-container {
+    flex-shrink: 0; /* Impede que o contêiner do SVG encolha */
   }
