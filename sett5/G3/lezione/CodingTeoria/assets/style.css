@@ -1,0 +1,77 @@
+.container {
+   background-color: antiquewhite;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    background-color: brown;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 30px
+}
+
+
+
+.image {
+    min-width: 250px;
+    height: 150px;
+    background-color: blueviolet;
+}
+
+main {
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.article {
+    display: flex;
+    gap: 30px;
+}
+
+/* .articlereverse {
+    display: flex;
+    gap: 30px;
+} */
+
+
+
+/* FOOTER */
+footer {
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+}
+
+footer div p {
+    font-size: 2rem;
+    color: white;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 567px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .reverse p {
+        order: 1;
+    }
+}
