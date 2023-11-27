@@ -59,6 +59,8 @@ font-family: 'Spectral', serif; */
 
 
   /*                  main                        */
+
+  /* contenitore-principale */
   .contenuto {
     padding-top: 80px;    
   }
@@ -78,8 +80,7 @@ font-family: 'Spectral', serif; */
     flex: 1; /* Ocupa o espaço restante no contêiner */
     padding-left: 100px;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: column;   
   }
   
 h1 {
@@ -89,7 +90,7 @@ h1 {
     color: #191919;
 }
 
-h2 {
+.h2-principale {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -112,3 +113,90 @@ h2 {
     margin-top: 30px;
   }
 
+  /* contenitore-secondario */
+
+.contenitore-secondario {    
+    display: flex;
+    flex-direction: column;
+    padding: 50px;    
+}
+
+.trending-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.h2-trending {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;    
+}
+
+.trending-span {
+    display: flex;        
+}
+
+.trending-numer {
+    color: #E6E7E7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;        
+    align-self: flex-start;
+}
+
+.user-info {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;  */
+}
+
+.img-user {   
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 50%;
+    align-self: flex-start;    
+}
+
+.img-user2 {   
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 30%;
+    align-self: flex-start;    
+}
+
+.text-info {
+    margin-left: 10px;    
+}
+
+.name-user {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;   
+    padding-top: 10px; 
+    padding-bottom: 5px;      
+}
+
+.h2-standard {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.p-date {
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+    font-size: 15px;    
+}
+
+.in-span{
+    color: #7575759a;
+}
+
+.date-star{
+    display: flex;
+    align-items: center;
+}
