@@ -76,12 +76,12 @@
 <!-- MODAL  -->
 
 <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Launch demo modal
-    </button>
+    </button> -->
 
 <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -97,7 +97,98 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <!-- MODAL 2  -->
+
+    <main class="container">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Registrazione utente
+</button>
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Attenzione</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" arial-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" arial-label="Last name">
+          </div>
+        </div>       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
     </div>
+  </div>
+</div>
+
+
+<!-- Catalogo  -->
+
+<main>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Catalogo Prodotti</h1>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Titolo</th>
+        <th scope="col">Autore</th>
+        <th scope="col">Genere</th>
+        <th scope="col">Prezzo</th>
+        <th scope="col">Azioni</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+      <td>Viaggio Europa</td>
+      <td>Rossi Giuseppino</td>
+      <td>Viaggi</td>
+      <td>9,99</td> 
+      <td>  
+        <button type="button" class="btn btn-outline-warning">Modifica</button>
+        <button type="button" class="btn btn-outline-danger">Elimina</button>
+      </td>   
+      </tr>
+    </tbody>
+  </table>
+
+<!-- PAGINATION -->
+<div class="row">
+<div class="col">
+  <nav aria-label="Page navigation exemple">
+    <ul class="pagination justify-content-end">   <!-- justify-content-end  - numeros do lado direito da tela -->
+      <li class="page-item disable"><a class="page-link" href="#">Procedente</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">Sucessivo</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+</main>
 
 
 </header>
