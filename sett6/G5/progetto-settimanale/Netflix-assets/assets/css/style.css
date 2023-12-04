@@ -21,9 +21,17 @@ body {
     padding-right: 20px; 
 }
 
+ /* TV Show */
 #navbarDropdown {
     border: 1px solid white;
     background-color: black;   
  }
 
- /* TV Show */
+ #navbarDropdownOp {
+    border: 1px solid white;
+    background-color: black; 
+    padding: 8px 20px 8px 20px;
+   
+ }
+
+
