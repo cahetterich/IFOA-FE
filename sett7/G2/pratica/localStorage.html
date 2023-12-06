@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Exercício de Armazenamento Local</title>
+ <script>
+    // Carregar o nome salvo do localStorage, se houver
+    function loadSavedName() {
+      var savedName = localStorage.getItem('savedName');
+      if (savedName) {
+        document.getElementById('savedName').innerHTML = 'Nome salvo: ' + savedName;
+      }
+    }
+
+    // Salvar o nome inserido no localStorage
+    function saveName() {
+      var name = document.getElementById('name').value;
+      localStorage.setItem('savedName', name);
+      document.getElementById('savedName').innerHTML = 'Nome salvo: ' + name;
+    }
+
+    // Remover o nome salvo do localStorage
+    function removeSavedName() {
+      localStorage.removeItem('savedName');
+      document.getElementById('savedName').innerHTML = 'Nome salvo: -';
+    }
+
+    // Contador de tempo que utiliza o sessionStorage
+    function updateTimeCounter() {
+      var time = sessionStorage.getItem('timeCounter');
+      if (!time) {
+        time = 0;
+      }
+      time++;
+      sessionStorage.setItem('timeCounter', time);
+      document.getElementById('timeCounter').innerHTML = 'Tempo: ' + time + ' segundos';
+    }
+
+    // Atualizar o contador de tempo a cada segundo
+    setInterval(updateTimeCounter, 1000);
+
+    // Carregar o nome salvo do localStorage quando a página for carregada
+    window.onload = loadSavedName;
+ </script>
+</head>
+<body>
+ <h1>Exercício de Armazenamento Local</h1>
+ <form>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name">
+    <button type="button" onclick="saveName()">Salvar</button>
+    <button type="button" onclick="removeSavedName()">Remover</button>
+ </form>
+ <p id="savedName"></p>
+ <p id="timeCounter"></p>
+</body>
+</html>
