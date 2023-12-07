@@ -11,6 +11,7 @@ function adicionarAoCarrinho(livro) {
     const carrinhoLivros = JSON.parse(localStorage.getItem('carrinhoLivros')) || [];
     carrinhoLivros.push(livro);
     localStorage.setItem('carrinhoLivros', JSON.stringify(carrinhoLivros));
+  
 }
 
 function removerDoCarrinho(livro) {
@@ -50,19 +51,20 @@ async function listarLivros() {
             cardPrice.textContent = `Preço: ${livro.price} USD`;
 
             const botaoScarta = document.createElement('button');
-            botaoScarta.classList.add('btn', 'btn-danger');
+            botaoScarta.classList.add('btn', 'btn-danger', 'bg-gradient');
             botaoScarta.textContent = 'Scarta';
             botaoScarta.addEventListener('click', () => coluna.remove());
 
             const botaoCompra = document.createElement('button');
-            botaoCompra.classList.add('btn', 'btn-primary');
+            botaoCompra.classList.add('btn', 'bg-success', 'bg-gradient', 'text-light');
             botaoCompra.textContent = 'Comprar';
             botaoCompra.addEventListener('click', () => adicionarAoCarrinho(livro));
 
             cardBody.appendChild(cardTitle);
             cardBody.appendChild(cardPrice);
-            cardBody.appendChild(botaoScarta);
             cardBody.appendChild(botaoCompra);
+            cardBody.appendChild(botaoScarta);
+            
 
             card.appendChild(cardImg);
             card.appendChild(cardBody);
@@ -80,11 +82,47 @@ function carregarCarrinho() {
     const carrinhoLivros = JSON.parse(localStorage.getItem('carrinhoLivros')) || [];
     carrinhoLivros.forEach(livro => {
         const item = document.createElement('li');
-        item.textContent = `${livro.title} - ${livro.price} USD`;
+        item.textContent = `Titulo do livro: ${livro.title} - Preço: ${livro.price} USD`;
         item.classList.add('list-group-item');
         carrinho.appendChild(item);
     });
 }
+
+function adicionarAoCarrinho(livro) {
+    // Código existente
+    const item = document.createElement('li');
+    item.id = `livro-${livro.id}`;
+    item.textContent = `Titulo do livro: ${livro.title} - Preço: ${livro.price} USD`;
+    item.classList.add('list-group-item');
+    carrinho.appendChild(item);
+
+    // Adicionar botão para excluir
+    const botaoExcluir = document.createElement('button');
+    botaoExcluir.classList.add('btn', 'btn-danger', 'btn-sm');
+    botaoExcluir.textContent = 'Excluir';
+    botaoExcluir.addEventListener('click', () => {
+        excluirDoCarrinho(livro.id);
+    });
+    item.appendChild(botaoExcluir);
+}
+
+function excluirDoCarrinho(id) {
+    const item = document.getElementById(`livro-${id}`);
+    item.remove();
+}
+
+
+carrinho.addEventListener('DOMSubtreeModified', () => {
+    let total = 0;
+    const livros = carrinho.getElementsByTagName('li');
+    for (let i = 0; i < livros.length; i++) {
+        const preco = livros[i].textContent.match(/\d+(\.\d+)?/);
+        if (preco) {
+            total += parseFloat(preco[0]);
+        }
+    }
+    document.getElementById('precoTotal').textContent = `${total.toFixed(2)} USD`;
+});
 
 listarLivros();
 carregarCarrinho();
