@@ -30,6 +30,10 @@ font-family: 'Spectral', serif; */
   .medium-logo {
     height: 65px;  
   }
+
+  .medium-search { 
+    height: 35px;
+  }
   
   .menu-nav {
     display: flex;
