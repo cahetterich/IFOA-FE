@@ -43,14 +43,14 @@ font-family: 'Spectral', serif; */
   
   .menu-item {
     font-family: 'Roboto', sans-serif;    
-    color: #462a44;
+    color: #3e3b5a;
     font-weight: 700;
     font-size: 18px
   }
 
   #button-get {
     font-family: 'Roboto', sans-serif;
-    background: #462a44; 
+    background: #2c2a46; 
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 50px;
